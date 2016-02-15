@@ -5,12 +5,10 @@
 cordova.commandProxy.add("Fullscreen",{
     on: function (successCallback, errorCallback, datas) {
         var view = Windows.UI.ViewManagement.ApplicationView.getForCurrentView();
-        view.exitFullScreenMode();
-        successCallback();
+        view.tryEnterFullScreenMode();
     },
     off: function (successCallback, errorCallback, datas) {
         var view = Windows.UI.ViewManagement.ApplicationView.getForCurrentView();
-        view.tryEnterFullScreenMode();
-        successCallback();
+        view.exitFullScreenMode();
     },
 });
