@@ -1,0 +1,44 @@
+<!--
+    cordova-plugin-fullscreen
+    Copyright © 2016 filfat Studios AB
+    Repo: https://github.com/filfat-Studios-AB/cordova-plugin-fullscreen
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:amazon="http://schemas.android.com/apk/lib/com.amazon.device.ads"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    id="com.filfatstudios.Fullscreeen"
+    version="1.2.7">
+    <name>Fullscreeen</name>
+    <description>Fullscreeen mode</description>
+    <license>MIT</license>
+
+    <engines>
+        <engine name="cordova" version=">=3.4.0"/>
+    </engines>
+
+    <asset src="www/Fullscreeen.js" target="js/Fullscreeen.js"/>
+
+    <js-module src="www/Fullscreeen.js" name="Fullscreeen">
+        <clobbers target="Fullscreeen" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Fullscreeen" >
+                <param name="android-package" value="com.filfatstudios.fullscreen.Fullscreeen"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/Fullscreeen.java" target-dir="src/com/filfatstudios/fullscreeen" />
+    </platform>
+    
+    <!-- windows -->
+  	<platform name="windows">
+    	<js-module src="src/windows/FullscreeenProxy.js" name="FullscreeenProxy">
+    		<merges target="" />
+    	</js-module>
+	</platform>
+</plugin>
