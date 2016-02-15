@@ -3,18 +3,14 @@
 //  Repo: https://github.com/filfat-Studios-AB/cordova-plugin-fullscreen
 var exec = require('cordova/exec');
 
-cordova.commandProxy.add("SpinnerDialog", {
+module.exports = {
     /* On */
     on: function(successCallback, errorCallback) {
-        var view = Windows.UI.ViewManagement.ApplicationView.getForCurrentView();
-        view.tryEnterFullScreenMode();
-        successCallback();
+        exec(successCallback, errorCallback, 'Fullscreen', 'on');
     },
     
     /* Off */
     off: function(successCallback, errorCallback) {
-        var view = Windows.UI.ViewManagement.ApplicationView.getForCurrentView();
-        view.tryEnterFullScreenMode();
-        successCallback();
+        exec(successCallback, errorCallback, 'Fullscreen', 'off');
     },
-});
+};
