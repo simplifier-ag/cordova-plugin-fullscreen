@@ -8,36 +8,36 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:amazon="http://schemas.android.com/apk/lib/com.amazon.device.ads"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
-    id="com.filfatstudios.Fullscreeen"
+    id="com.filfatstudios.Fullscreen"
     version="1.2.7">
-    <name>Fullscreeen</name>
-    <description>Fullscreeen mode</description>
+    <name>Fullscreen</name>
+    <description>Fullscreen mode</description>
     <license>MIT</license>
 
     <engines>
         <engine name="cordova" version=">=3.4.0"/>
     </engines>
 
-    <asset src="www/Fullscreeen.js" target="js/Fullscreeen.js"/>
+    <asset src="www/Fullscreen.js" target="js/Fullscreen.js"/>
 
-    <js-module src="www/Fullscreeen.js" name="Fullscreeen">
-        <clobbers target="Fullscreeen" />
+    <js-module src="www/Fullscreen.js" name="Fullscreen">
+        <clobbers target="Fullscreen" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="Fullscreeen" >
-                <param name="android-package" value="com.filfatstudios.fullscreen.Fullscreeen"/>
+            <feature name="Fullscreen" >
+                <param name="android-package" value="com.filfatstudios.fullscreen.Fullscreen"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/Fullscreeen.java" target-dir="src/com/filfatstudios/fullscreeen" />
+        <source-file src="src/android/Fullscreen.java" target-dir="src/com/filfatstudios/Fullscreen" />
     </platform>
     
     <!-- windows -->
   	<platform name="windows">
-    	<js-module src="src/windows/FullscreeenProxy.js" name="FullscreeenProxy">
+    	<js-module src="src/windows/FullscreenProxy.js" name="FullscreenProxy">
     		<merges target="" />
     	</js-module>
 	</platform>
