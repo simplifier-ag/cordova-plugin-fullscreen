@@ -8,8 +8,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:amazon="http://schemas.android.com/apk/lib/com.amazon.device.ads"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
-    id="com.filfatstudios.Fullscreen"
-    version="0.1.4">
+    id="cordova-fs-plugin-fullscreen"
+    version="0.1.5">
     <name>Fullscreen</name>
     <description>Fullscreen mode</description>
     <license>MIT</license>
