@@ -27,8 +27,8 @@ Fullscreen.off();
 
 Feature detect to avoid crash or errors on unsupported platforms:
 ```javascript
-document.addEventListener("deviceready", function () {
-	if(typeof MusicController !== 'undefined'){
+document.addEventListener('deviceready', function () {
+	if(typeof Fullscreen !== 'undefined'){
 		//It's safe to use Fullscreen here	
 	}
 });
