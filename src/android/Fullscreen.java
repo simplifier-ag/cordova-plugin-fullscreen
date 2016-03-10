@@ -14,9 +14,9 @@ import org.json.JSONException;
 import android.view.View;
 import android.view.WindowManager;
 
-public class MusicController extends CordovaPlugin {
+public class FullScreen extends CordovaPlugin {
     
-	@Override
+	/*@Override
 	public boolean execute(final String action, final JSONArray args, final CallbackContext callbackContext) throws JSONException {
 		final Context context = this.cordova.getActivity().getApplicationContext();
 		final Activity activity = this.cordova.getActivity();
@@ -47,5 +47,5 @@ public class MusicController extends CordovaPlugin {
         
         callbackContext.error("Error: Unknown action!");
 		return false;
-	}
+	}*/
 }
