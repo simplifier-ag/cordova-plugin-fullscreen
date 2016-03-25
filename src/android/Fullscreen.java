@@ -14,19 +14,16 @@ import org.json.JSONException;
 import android.view.View;
 import android.view.WindowManager;
 
-public class FullScreen extends CordovaPlugin {
+public class Fullscreen extends CordovaPlugin {
     
-	/*@Override
+	@Override
 	public boolean execute(final String action, final JSONArray args, final CallbackContext callbackContext) throws JSONException {
-		final Context context = this.cordova.getActivity().getApplicationContext();
-		final Activity activity = this.cordova.getActivity();
-
 		if (action.equals("on")) {
 			 cordova.getActivity().runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
                     cordova.getActivity().getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
-                    cordova.getActivity().getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+                    cordova.getActivity().getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
                 }
             });
 
@@ -47,5 +44,5 @@ public class FullScreen extends CordovaPlugin {
         
         callbackContext.error("Error: Unknown action!");
 		return false;
-	}*/
+	}
 }
