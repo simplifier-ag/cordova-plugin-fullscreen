@@ -1,6 +1,6 @@
 {
   "name": "cordova-fs-plugin-fullscreen",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A cordova plugin for controlling fullscreen",
   "author": "filfat-studios-ab",
   "license": "MIT",
@@ -10,7 +10,7 @@
     "url": "git+https://github.com/filfat-Studios-AB/cordova-plugin-fullscreen.git"
   },
   "cordova": {
-    "id": "cordova-plugin-fullscreenr",
+    "id": "cordova-plugin-fullscreen",
     "platforms": [
       "android",
       "windows"
